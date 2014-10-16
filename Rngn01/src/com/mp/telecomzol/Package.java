@@ -1,4 +1,4 @@
-package com.mobilepackage.telecom;
+package com.mp.telecomzol;
 
 import ws.model.Page;
 
@@ -8,7 +8,7 @@ import com.mp.model.PackageTariff;
  * @author Administrator
  *
  */
-public class TelecomPackage extends PackageTariff{
+public class Package extends PackageTariff{
 	/**
 	 * analyze htmls from Zol
 	 * @param page

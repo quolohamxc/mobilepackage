@@ -1,7 +1,9 @@
-package com.mobilepackage.telecom;
+package com.mp.telecomzol;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 
 import ws.crawler.BreadthCrawler;
 import ws.model.Page;
@@ -14,7 +16,7 @@ import ws.util.RandomUtils;
  * @author Administrator
  *
  */
-public class TelecomController {
+public class Controller {
 
 	public static class CtrlCrawler extends BreadthCrawler {
 		public CtrlCrawler() {
@@ -76,4 +78,29 @@ public class TelecomController {
 //
 //	}
 
+	private String mEntry = "http://detail.zol.com.cn/phone_package/dianxin/";
+	private ArrayList<String> mZolRegex;
+	
+	private void addDefaultRegex() {
+		mZolRegex = new ArrayList<String>();
+		mZolRegex.add("+^http://detail.zol.com.cn/phone_package/dianxin/");
+		mZolRegex.add("+http://detail.zol.com.cn/phone_package/dianxin/[0-9]+.*");
+		mZolRegex.add("+http://detail.zol.com.cn/phone_package/index.*");
+	}
+	
+	public void fetchZol() {
+		addDefaultRegex();
+		CtrlCrawler mCC = new CtrlCrawler();
+		mCC.addSeed(this.mEntry);
+		mCC.setRoot("download");
+		for (int i = 0; i < this.mZolRegex.size(); i++) {
+			mCC.addRegex(this.mZolRegex.get(i));
+		}
+		try {
+			mCC.start(3);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 }

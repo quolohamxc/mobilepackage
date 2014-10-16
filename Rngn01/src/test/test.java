@@ -1,6 +1,6 @@
 package test;
 
-import com.mobilepackage.telecom.TelecomZol;
+import com.mp.telecomzol.Controller;
 
 //                   _ooOoo_
 //                  o8888888o
@@ -30,7 +30,7 @@ import com.mobilepackage.telecom.TelecomZol;
  */
 public class test {
 	public static void main(String args[]) {
-		TelecomZol mTZ = new TelecomZol();
-		mTZ.fetchZol();
+		Controller cTR = new Controller();
+		cTR.fetchZol();
 	}
 }
