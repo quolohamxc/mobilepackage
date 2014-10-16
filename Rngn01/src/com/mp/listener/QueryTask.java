@@ -10,6 +10,7 @@ public class QueryTask extends TimerTask{
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
+		//System.out.println("success"); //change to log.info
 		if(isRunning = false) {
 			isRunning = true;
 			// TODO something
