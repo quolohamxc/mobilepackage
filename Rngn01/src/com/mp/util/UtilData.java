@@ -14,4 +14,7 @@ public class UtilData {
 	public static final int CMCC = 10086;
 	public static final int CUNICOM = 10010;
 	public static final int CTELECOM = 10000;
+	//ÆäËû
+	public static final int UNUSED = -1;
+	public static final int INVALID = 9991;
 }

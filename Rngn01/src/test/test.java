@@ -1,6 +1,6 @@
 package test;
 
-import com.mp.telecomzol.Controller;
+import com.mp.telecomzol.TController;
 
 //                   _ooOoo_
 //                  o8888888o
@@ -30,7 +30,7 @@ import com.mp.telecomzol.Controller;
  */
 public class test {
 	public static void main(String args[]) {
-		Controller cTR = new Controller();
+		TController cTR = new TController();
 		cTR.fetchZol();
 	}
 }
