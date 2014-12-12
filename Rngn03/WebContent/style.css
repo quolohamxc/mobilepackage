@@ -1,0 +1,155 @@
+/* 
+	project:  mobile package queryform
+	author:   floionze
+*/
+body{
+	font-family:  Arial, Helvetica, sans-serif;
+	background: #ffffff;
+	color: #555;
+	  }
+#container
+{
+width:100%;
+margin:0px auto;
+background-color: #EEEEEE;
+color: #333;
+border: 1px solid #2D69A1;
+
+}
+
+#top
+{
+height:130px;
+background:url(images/back_all.gif) repeat-x;
+}
+#top h1,#top h2
+{
+	font-family:Lucida Sans,Arial,Helvetica,sans-serif;
+	text-align:center;
+}
+#top h1
+{
+padding-top:30px;
+margin: 0;
+color: #e4e4e4;
+font-size: 32px ;
+}
+#top h2
+{
+font-size:16px;
+color:#000;
+}
+#header  ul
+{   
+    
+	margin:0;
+	padding:0;	
+	list-style:none;
+	
+}
+#header li
+{
+	display:inline;
+	list-style-type: none;
+	text-decoration:none;
+    line-height: 46px;
+    font-size: 1.0em;
+	
+}
+#navcontainer
+{
+	background: #59A6CF ;
+	padding:0 16px;
+}
+#header #menu a
+{
+color: #fff;
+text-decoration: none;
+padding: 12px 20px 13px 20px;
+target="_blank";
+}
+#header a:hover{
+	           background:url(images/menu_bg.gif) repeat;
+			   
+			 
+			   }
+#leftnav ,#rightnav
+{
+width: 160px;
+margin: 0;
+padding: 1em;
+font: 11px Arial, Helvetica, sans-serif;
+}
+#leftnav
+{
+float: left;
+
+
+}
+#rightnav
+{
+float: right;
+}
+#content
+{
+margin-left:185px;
+margin-right:185px;
+padding: 1em;
+border-left: 1px dotted #2D69A1;
+border-right: 1px dotted #2D69A1;
+font: 12px Arial, Helvetica, sans-serif;
+background:#EEE;
+}
+#content h1{
+	       color: #666;
+	       font-size: 1.5em;
+	       height: 20px;
+	       margin-top: 1.2em;
+		   }
+
+
+#leftnav p, #rightnav p { margin: 0 0 1em 0; }
+#leftnav h1 {
+	color: #666;
+	font-size: 1.2em;
+	height: 20px;
+	margin-top: 1.2em;
+}
+#leftnav ul {
+	
+	margin: 0;
+	padding: 0;
+}
+#leftnav li {
+	list-style:none;
+	border-top: none;
+	margin: 0px;
+	height:100%;
+	
+}
+#leftnav li a {
+	/**color: #777;**/
+	color:#4283B9;
+	display: block;
+	font-size: 0.9em;
+	padding: 3px 6px 3px 14px;
+	text-decoration: none;
+	
+}
+#leftnav li a:hover {
+	color: #111;
+}
+#rightnav .product_wrapper h1{color: #666;
+	font-size: 1.2em;
+	height: 20px;
+	margin-top: 1.2em;}
+#rightnav .product_wrapper p ,#leftnav p{font-size:1em;color:#555;}
+#footer
+{
+clear: both;
+margin: 0;
+color: #333;
+border-top: 1px dotted #2D69A1;
+text-align:center;
+font-size:.7em;
+}
